@@ -1,4 +1,4 @@
-Auth Social 
+<h1>Auth Social</h1> 
 
 
 Install:
@@ -12,6 +12,7 @@ Rename:
 Run:
 
     npm install --save 
+
 
     npm start
 
