@@ -2,7 +2,7 @@ var load = require('express-load');
 var app = require('./config/express');
 var passport = require('./config/passport')();
 
-var mongo = require('mongodb').MongoClient;
+// var mongo = require('mongodb').MongoClient;
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -18,17 +18,18 @@ app.get('/account', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    mongo.connect('mongodb://localhost:27017/teste', function(err, db) {
-        if (err) {
-            throw err;
-        }
-        db.collection('mammals').find().toArray(function(err, result) {
-            if (err) {
-            throw err;
-            }
-            console.log(result);
-        });
-    });
+    
+    // mongo.connect('mongodb://localhost:27017/teste', function(err, db) {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     db.collection('mammals').find().toArray(function(err, result) {
+    //         if (err) {
+    //         throw err;
+    //         }
+    //         console.log(result);
+    //     });
+    // });
 
     res.render('index', {obj:{name:'ManoKay'}});
 });
