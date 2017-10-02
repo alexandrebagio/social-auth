@@ -1,0 +1,18 @@
+module.exports = {
+    twitter : {
+        consumerKey: '',
+        consumerSecret: '',
+        callbackURL: 'http://localhost:3000/auth/twitter/callback'    
+    },
+    facebook : {
+        clientID: '',
+        clientSecret: '',
+        callbackURL: 'http://localhost:3000/auth/facebook/callback',
+        profileFields: ['id', 'displayName', 'name', 'gender', 'photos']
+    },
+    google : {
+        clientID: '',
+        clientSecret: 'Z75OGyDOcpyWjRuy-be-26UC',
+        callbackURL: 'http://localhost:3000/auth/google/callback'
+    }
+}
