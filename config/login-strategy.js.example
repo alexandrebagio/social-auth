@@ -12,7 +12,7 @@ module.exports = {
     },
     google : {
         clientID: '',
-        clientSecret: 'Z75OGyDOcpyWjRuy-be-26UC',
+        clientSecret: '',
         callbackURL: 'http://localhost:3000/auth/google/callback'
     }
 }
